@@ -1,0 +1,13 @@
+extends page
+block append head
+    title Login
+block body
+    form(action='/login', method='POST')
+        | Username
+        input(type='text', name='username')
+        | Password
+        input(type='password', name='password')
+        | Stay Login
+        input(type='checkbox', name='stayLogin')
+        input(type='submit', value='Login')
+
