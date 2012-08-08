@@ -6,7 +6,8 @@
 		"asyncchain" : "*",
 		"express" : "~3.0.0",
 		"jade" : "~0.27.0",
-		"mongoose" : "~3.0.0"
+		"mongoose" : "~3.0.0",
+		"markdown" : "v0.4.0"
 	},
 	"scripts" : {
 		"start" : "node ./lib/main.js"
