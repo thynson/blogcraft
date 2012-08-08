@@ -1,0 +1,7 @@
+extends page
+block append head
+    title= title
+block body
+    div.title= title
+    div.body!= markdown.toHTML(body)
+
