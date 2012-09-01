@@ -1,5 +1,9 @@
 extends page
 block append head
-    title Nodian blog system
+    title= title
 block body
-    h1 Hello world!
+    each post in posts
+        div.post
+            div.title= post.title
+            div.body!= post.body
+
