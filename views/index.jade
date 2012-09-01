@@ -4,6 +4,8 @@ block append head
 block body
     each post in posts
         div.post
-            div.title= post.title
+            - link = '/post/' + post._id
+            h2.title
+                a(href=link)= post.title
             div.body!= post.body
 
