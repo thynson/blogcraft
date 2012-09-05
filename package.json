@@ -3,7 +3,7 @@
 	"version" : "0.1.0",
 	"author" : "Thynson <lanxingcan@gmail.com>",
 	"dependencies" : {
-		"asyncchain" : "*",
+		"xchain" : "*0.4.0",
 		"express" : "~3.0.0",
 		"jade" : "~0.27.0",
 		"mongoose" : "~3.0.0",
