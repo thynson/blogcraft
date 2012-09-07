@@ -1,9 +1,12 @@
 {
 	"name" : "nodepress",
 	"version" : "0.1.0",
-	"author" : "Thynson <lanxingcan@gmail.com>",
+	"author" : {
+		"name" : "Thynson",
+		"email" : "lanxingcan@gmail.com"
+	},
 	"dependencies" : {
-		"xchain" : "*0.4.0",
+		"xchain" : "~0.4.2",
 		"express" : "~3.0.0",
 		"jade" : "~0.27.0",
 		"mongoose" : "~3.0.0",
