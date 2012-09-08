@@ -7,4 +7,32 @@ block body
             h2.title
                 a(href='/post/' + post.id)= post.title
             div.body!= post.body
+    div.page-navigate
+        | [#{page}/#{maxPage}]:
+        | [
+        a(href='?page=1') &lt;&lt;
+        | ]
+
+        | [
+        - if (page > 1)
+            a(href='?page=' + (page-1)) &lt;
+        - else
+            | &lt;
+        | ]
+
+
+        - for (var i = startPage; i <= endPage; i++)
+            | [
+            a(href='?page=' + i) #{i}
+            | ]
+
+        | [
+        - if (page < maxPage)
+            a(href='?page=' + (page+1)) &gt;
+        - else
+            | &gt;
+        | ]
+        | [
+        a(href='?page=' + maxPage) &gt;&gt;
+        | ]
 
