@@ -1,0 +1,7 @@
+extends page
+append banner
+    div.navbar
+        ul
+            each x in navbar
+                li
+                    a(href=x.uri)= x.item
