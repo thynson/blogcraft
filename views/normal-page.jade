@@ -5,3 +5,5 @@ append banner
             each x in navbar
                 li
                     a(href=x.uri)= x.item
+append footer
+    p Query in #{(Date.now() - meta.renderStamp)/1000} seconds
