@@ -6,6 +6,11 @@ block body
         div.post
             h2.title
                 a(href='/post/' + post.id)= post.title
+            div.meta
+                div.label Created at:
+                div.value= post.createdDate
+                div.label Modified at:
+                div.value= post.createdDate
             div.body!= post.body
     div.page-navigate
         | [#{page}/#{maxPage}]:

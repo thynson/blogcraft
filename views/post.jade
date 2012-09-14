@@ -1,7 +1,12 @@
 extends navbar-page
 block append head
-    title= title
+    title= post.title
 block body
-    h2.title= title
-    div.body!= body
+    h2.title= post.title
+    div.meta
+        div.label Created at:
+        div.value= post.createdDate
+        div.label Modified at:
+        div.value= post.createdDate
+    div.body!= post.body
 
