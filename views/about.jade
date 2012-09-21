@@ -1,0 +1,6 @@
+include lib/mixin.jade
+extends normal-page
+block append head
+    title About
+block body
+    mixin showPost(about, '/about');
