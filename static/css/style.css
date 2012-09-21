@@ -61,11 +61,6 @@ pre, code {
 	font-size: 14px;
 }
 
-/* Indent and margin for paragraph */
-p {
-	text-indent: 2em;
-	margin: 0.5em;
-}
 
 a {
 	color: #163;
@@ -120,6 +115,7 @@ a:hover {
 	width: 720px;
 	display: inline-block;
 }
+
 .sidebar {
 	vertical-align: top;
 	display: inline-block;
@@ -131,7 +127,61 @@ a:hover {
 }
 
 .post .title {
+	font-size: 24px;
+}
+
+.post .meta div{
+	display: inline;
+	color: #666;
+}
+
+.post .body {
+	padding: 10px 30px;
+}
+
+.post h1 {
+	font-size: 24px;
+}
+
+.post h2 {
+	font-size: 22px;
+}
+
+.post h3 {
+	font-size: 20px;
+}
+
+.post h4 {
+	font-size: 18px;
+}
+
+.post h5 {
 	font-size: 16px;
+}
+
+.post h6 {
+	font-size: 14px;
+}
+
+/* Indent and margin for paragraph */
+.post p {
+	text-indent: 2em;
+	margin: 0.5em 0;
+}
+
+.post pre {
+	padding: 1em 2em;
+	background-color: #cccccc;
+}
+
+.post .body h1,
+.post .body h2,
+.post .body h3,
+.post .body h4,
+.post .body h5,
+.post .body h6 {
+	padding: 0;
+	margin: 0.5em 0;
 }
 
 
