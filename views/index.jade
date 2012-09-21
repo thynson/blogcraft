@@ -4,7 +4,7 @@ block append head
 block body
     each post in posts
         div.post
-            h2.title
+            .title
                 a(href='/post/' + post.id)= post.title
             div.meta
                 div.label Created at:
