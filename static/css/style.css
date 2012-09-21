@@ -170,8 +170,8 @@ a:hover {
 }
 
 .post pre {
-	padding: 1em 2em;
-	background-color: #cccccc;
+	margin: 1em 0;
+	padding: 0 2em;
 }
 
 .post .body h1,
