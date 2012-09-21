@@ -1,12 +1,7 @@
+include lib/mixin.jade
 extends normal-page
 block append head
     title= post.title
 block body
-    h2.title= post.title
-    div.meta
-        div.label Created at:
-        div.value= post.createdDate
-        div.label Modified at:
-        div.value= post.createdDate
-    div.body!= post.body
+    mixin showPost(post, '/post/' + post._id)
 
