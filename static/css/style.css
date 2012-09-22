@@ -23,7 +23,7 @@ select
 }
 
 body {
-	font-size: 14px;
+	font-size: 11pt;
 	font-family: serif;
 }
 
@@ -33,32 +33,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 24pt;
 }
 
 h2 {
-	font-size: 32px;
+	font-size: 21pt;
 }
 
 h3 {
-	font-size: 28px;
+	font-size: 18pt;
 }
 
 h4 {
-	font-size: 24px;
+	font-size: 16pt;
 }
 
 h5 {
-	font-size: 10px;
+	font-size: 14pt;
 }
 
 h6 {
-	font-size: 16px;
+	font-size: 12pt;
 }
 
 pre, code {
 	font-family: monospace;
-	font-size: 14px;
+	font-size: 12pt;
 }
 
 
@@ -81,11 +81,6 @@ a:hover {
 }
 
 
-.container {
-	margin: 0 auto;
-	width: 960px;
-}
-
 .banner {
 	text-align: center;
 	padding: 30px;
@@ -93,13 +88,18 @@ a:hover {
 }
 
 .banner a.title {
-	font-size: 24px;
+	font-size: 21pt;
 	font-family: Serif;
 }
 
 .navbar li {
 	display: inline;
 	padding: 0 20px;
+}
+
+.body {
+	margin: 0 auto;
+	width: 960px;
 }
 
 .footer {
@@ -127,7 +127,7 @@ a:hover {
 }
 
 .post .title {
-	font-size: 24px;
+	font-size: 18pt;
 }
 
 .post .meta div{
@@ -141,27 +141,27 @@ a:hover {
 }
 
 .post h1 {
-	font-size: 24px;
+	font-size: 21pt;
 }
 
 .post h2 {
-	font-size: 21px;
+	font-size: 18pt;
 }
 
 .post h3 {
-	font-size: 18px;
+	font-size: 16pt;
 }
 
 .post h4 {
-	font-size: 16px;
+	font-size: 14pt;
 }
 
 .post h5 {
-	font-size: 14px;
+	font-size: 12pt;
 }
 
 .post h6 {
-	font-size: 14px;
+	font-size: 11pt;
 }
 
 /* Indent and margin for paragraph */
