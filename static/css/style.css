@@ -8,7 +8,7 @@ a, base,
 /* Image */
 img, area, map, object, param,
 /* List */
-ul, li, ol, li, dl, dt, dd,
+ul, li, ol, nl, dl, dt, dd,
 /* Table */
 table, tr, th, td, thead, tbody, tfoot, col, colgroup, caption
 /* Form */
@@ -137,6 +137,7 @@ a:hover {
 
 .post .body {
 	padding: 10px 30px;
+	margin: 10px;
 }
 
 .post h1 {
@@ -165,7 +166,6 @@ a:hover {
 
 /* Indent and margin for paragraph */
 .post p {
-	text-indent: 2em;
 	margin: 0.5em 0;
 }
 
@@ -174,14 +174,7 @@ a:hover {
 	padding: 0 2em;
 }
 
-.post .body h1,
-.post .body h2,
-.post .body h3,
-.post .body h4,
-.post .body h5,
-.post .body h6 {
-	padding: 0;
-	margin: 0.5em 0;
+.post ul, .post ol {
+	padding-left: 1em;
 }
-
 
