@@ -83,7 +83,7 @@ a:hover {
 
 .banner {
 	text-align: center;
-	padding: 30px;
+	padding-top: 30px;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -94,7 +94,7 @@ a:hover {
 
 .navbar li {
 	display: inline;
-	padding: 0 20px;
+	margin: 0 20px;
 }
 
 .body {
@@ -105,25 +105,11 @@ a:hover {
 .footer {
 	text-align: center;
 	border-top: 1px solid #ccc;
-	padding-bottom: 20px;
-	bottom: 0;
-	width: 100%;
-}
-
-.content {
-	vertical-align: top;
-	width: 720px;
-	display: inline-block;
-}
-
-.sidebar {
-	vertical-align: top;
-	display: inline-block;
-	width: 200px;
+	padding: 30px 0;
 }
 
 .post {
-	padding: 20px;
+	margin: 20px;
 }
 
 .post .title {
@@ -136,8 +122,7 @@ a:hover {
 }
 
 .post .body {
-	padding: 10px 30px;
-	margin: 10px;
+	margin: 0 30px;
 }
 
 .post h1 {
@@ -170,11 +155,10 @@ a:hover {
 }
 
 .post pre {
-	margin: 1em 0;
-	padding: 0 2em;
+	margin: 1em 2em;
 }
 
 .post ul, .post ol {
-	padding-left: 1em;
+	margin-left: 1em;
 }
 
