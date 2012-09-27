@@ -6,10 +6,10 @@ mixin showDate(datetime)
     - var minuts = datetime.getMinutes();
     - var seconds = datetime.getSeconds();
     - if (month < 10) month = '0' + month;
-    - if (date < 10) date = '0' + month;
-    - if (hour < 10) hour = '0' + month;
-    - if (minuts < 10) minuts = '0' + month;
-    - if (seconds < 10) seconds = '0' + month;
+    - if (date < 10) date = '0' + date;
+    - if (hour < 10) hour = '0' + hour;
+    - if (minuts < 10) minuts = '0' + minuts;
+    - if (seconds < 10) seconds = '0' + seconds;
     div #{year}/#{month}/#{date} #{hour}:#{minuts}:#{seconds}
 
 mixin showPost(p, link)
