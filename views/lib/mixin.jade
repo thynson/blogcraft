@@ -1,0 +1,28 @@
+mixin showDate(datetime)
+    - var year = datetime.getFullYear();
+    - var month = datetime.getMonth();
+    - var date = datetime.getDate();
+    - var hour = datetime.getHours();
+    - var minuts = datetime.getMinutes();
+    - var seconds = datetime.getSeconds();
+    - if (month < 10) month = '0' + month;
+    - if (date < 10) date = '0' + date;
+    - if (hour < 10) hour = '0' + hour;
+    - if (minuts < 10) minuts = '0' + minuts;
+    - if (seconds < 10) seconds = '0' + seconds;
+    div #{year}/#{month}/#{date} #{hour}:#{minuts}:#{seconds}
+
+mixin showPost(p, link)
+    .post
+        a.title(href=link)= p.title
+        .body!= p.body
+        - if (p.createdDate)
+            .meta
+                .label Created at:
+                .value
+                    mixin showDate(p.createdDate)
+        - if (p.modifiedDate && p.createdDate.getTime() !== p.modifiedDate.getTime())
+            .meta
+                .label Modified at:
+                .value
+                    mixin showDate(p.modifiedDate)

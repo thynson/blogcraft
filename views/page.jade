@@ -2,13 +2,15 @@
 html
     head
         block head
+        link(type='text/css', rel='stylesheet', href='/css/style.css')
+        link(type='text/css', rel='stylesheet', href='/css/highlight.css')
     body
         div.banner
-            h1
-                a(href='/') Nodepress
-        hr
+            a.title(href='/') Nodepress
+            block banner
         div.body
             block body
-        hr
+            block sidebar
         div.footer
             p Powered by nodepress
+            block footer

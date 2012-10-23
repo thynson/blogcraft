@@ -1,7 +1,6 @@
 include lib/mixin.jade
 extends normal-page
 block append head
-    title= post.title
+    title About
 block body
-    mixin showPost(post, '/post/' + post._id)
-
+    mixin showPost(about, '/about')

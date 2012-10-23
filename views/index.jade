@@ -1,38 +1,36 @@
-extends page
+include lib/mixin.jade
+extends normal-page
 block append head
     title= title
 block body
     each post in posts
-        div.post
-            h2.title
-                a(href='/post/' + post.id)= post.title
-            div.body!= post.body
+        mixin showPost(post, '/post/' + post._id)
     div.page-navigate
-        | [#{page}/#{maxPage}]:
+        | [#{meta.page}/#{meta.maxPage}]:
         | [
         a(href='?page=1') &lt;&lt;
         | ]
 
         | [
-        - if (page > 1)
-            a(href='?page=' + (page-1)) &lt;
+        - if (meta.page > 1)
+            a(href='?page=' + (meta.page-1)) &lt;
         - else
             | &lt;
         | ]
 
 
-        - for (var i = startPage; i <= endPage; i++)
+        - for (var i = meta.startPage; i <= meta.endPage; i++)
             | [
             a(href='?page=' + i) #{i}
             | ]
 
         | [
-        - if (page < maxPage)
-            a(href='?page=' + (page+1)) &gt;
+        - if (meta.page < meta.maxPage)
+            a(href='?page=' + (meta.page+1)) &gt;
         - else
             | &gt;
         | ]
         | [
-        a(href='?page=' + maxPage) &gt;&gt;
+        a(href='?page=' + meta.maxPage) &gt;&gt;
         | ]
 

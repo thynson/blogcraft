@@ -1,0 +1,164 @@
+/* Sturcture */
+html, body, div, span,
+/* Text */
+p, h1, h2, h3, h4, h5, h6, strong, em, acronym, address, bdo, blockquote,
+cite, q, code, ins, del, dfn, kbd, pre, samp, var, br,
+/* Link */
+a, base,
+/* Image */
+img, area, map, object, param,
+/* List */
+ul, li, ol, nl, dl, dt, dd,
+/* Table */
+table, tr, th, td, thead, tbody, tfoot, col, colgroup, caption
+/* Form */
+form, label, fieldset, legend, input, textarea, optgroup, button, label,
+select
+{
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+body {
+	font-size: 11pt;
+	font-family: serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0.5em 0;
+}
+
+h1 {
+	font-size: 24pt;
+}
+
+h2 {
+	font-size: 21pt;
+}
+
+h3 {
+	font-size: 18pt;
+}
+
+h4 {
+	font-size: 16pt;
+}
+
+h5 {
+	font-size: 14pt;
+}
+
+h6 {
+	font-size: 12pt;
+}
+
+pre, code {
+	font-family: monospace;
+	font-size: 12pt;
+}
+
+
+a {
+	color: #163;
+}
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+.banner {
+	text-align: center;
+	padding-top: 30px;
+	border-bottom: 1px solid #ccc;
+}
+
+.banner a.title {
+	font-size: 21pt;
+	font-family: Serif;
+}
+
+.navbar li {
+	display: inline;
+	margin: 0 20px;
+}
+
+.body {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.footer {
+	text-align: center;
+	border-top: 1px solid #ccc;
+	padding: 30px 0;
+}
+
+.post {
+	margin: 20px;
+}
+
+.post .title {
+	font-size: 18pt;
+}
+
+.post .meta div{
+	display: inline;
+	color: #666;
+}
+
+.post .body {
+	margin: 0 30px;
+}
+
+.post h1 {
+	font-size: 21pt;
+}
+
+.post h2 {
+	font-size: 18pt;
+}
+
+.post h3 {
+	font-size: 16pt;
+}
+
+.post h4 {
+	font-size: 14pt;
+}
+
+.post h5 {
+	font-size: 12pt;
+}
+
+.post h6 {
+	font-size: 11pt;
+}
+
+/* Indent and margin for paragraph */
+.post p {
+	margin: 0.5em 0;
+}
+
+.post pre {
+	margin: 1em 2em;
+}
+
+.post ul, .post ol {
+	margin-left: 1em;
+}
+
