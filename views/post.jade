@@ -4,4 +4,13 @@ block append head
     title= post.title
 block body
     mixin showPost(post, '/post/' + post._id)
+    div#comment
+        each comment in post.comments
+            .comment
+                .user= comment.name
+                mixin showDate(comment.createdDate)
+                .content= comment.body
+        .compose
+
+
 
