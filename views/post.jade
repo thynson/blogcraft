@@ -9,7 +9,7 @@ block body
             .comment
                 .user= comment.name
                 mixin showDate(comment.createdDate)
-                .content= comment.body
+                .content!= comment.body
         .compose
 
 
