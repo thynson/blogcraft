@@ -1,0 +1,13 @@
+
+mixin markdownEditor(method, target)
+    form.markdown-editor(method=method, action=target)
+        div
+            label Name
+            input(type='text', name='name')
+        div
+            label Email
+            input(type='text', name='email')
+        textarea.editor(name='body')
+        input(type='submit') Subit
+
+

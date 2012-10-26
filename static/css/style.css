@@ -217,3 +217,13 @@ a:hover {
 #comment .comment .meta .label {
 	color: #666;
 }
+
+#comment .markdown-editor textarea {
+	border: 1px solid black;
+	min-height: 200px;
+	min-width: 600px;
+}
+
+#comment .markdonw-editor input[@type="submit"] {
+	border: 1px solid black;
+}
