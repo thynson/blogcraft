@@ -26,7 +26,8 @@ mixin showPost(p, link)
                 .label Modified at:
                 .value
                     mixin showDate(p.modifiedDate)
-        .meta
-            .label
-                a(href='/post/' + p._id + '#comment') Comments:#{p.comments.length}
+        - if (p.comments)
+            .meta
+                .label
+                    a(href='/post/' + p._id + '#comment') Comments:#{p.comments.length}
 
