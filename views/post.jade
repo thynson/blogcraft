@@ -8,10 +8,10 @@ block body
         each comment in post.comments
             .comment
                 .meta
-                    .label Nickname
+                    .label Nickname:
                     .value= comment.name
                 .meta
-                    .label Date
+                    .label Date:
                     .value
                         mixin showDate(comment.createdDate)
                 .content!= comment.body

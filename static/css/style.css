@@ -162,3 +162,58 @@ a:hover {
 	margin-left: 1em;
 }
 
+#comment {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#comment h1 {
+	font-size: 16pt;
+}
+
+#comment h2 {
+	font-size: 15pt;
+}
+
+#comment h3 {
+	font-size: 14pt;
+}
+
+#comment h4 {
+	font-size: 13pt;
+}
+
+#comment h5 {
+	font-size: 12pt;
+}
+
+#comment h6 {
+	font-size: 11pt;
+}
+
+/* Indent and margin for paragraph */
+#comment p {
+	margin: 0.5em 0;
+}
+
+#comment pre {
+	margin: 1em 2em;
+}
+
+#comment ul, #comment ol {
+	margin-left: 1em;
+}
+
+#comment .comment .content {
+	margin-left: 20px;
+}
+
+
+#comment .comment .meta div {
+	display: inline;
+	color: #444;
+}
+
+#comment .comment .meta .label {
+	color: #666;
+}
