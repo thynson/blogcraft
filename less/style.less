@@ -1,0 +1,196 @@
+
+
+@import "./highlight.less";
+
+@linkColor: #163;
+@visitedLinkColor: @linkColor;
+@metaColor: #666;
+@defaultFontSize: 11pt;
+@monospaceFontSize: 12pt;
+@defaultFontFamily: serif;
+@monospaceFontFamily: monospace;
+@solidBorder: 1px solid #ccc;
+
+/* Sturcture */
+html, body, div, span,
+/* Text */
+p, h1, h2, h3, h4, h5, h6, strong, em, acronym, address, bdo, blockquote,
+cite, q, code, ins, del, dfn, kbd, pre, samp, var, br,
+/* Link */
+a, base,
+/* Image */
+img, area, map, object, param,
+/* List */
+ul, li, ol, nl, dl, dt, dd,
+/* Table */
+table, tr, th, td, thead, tbody, tfoot, col, colgroup, caption,
+/* Form */
+form, label, fieldset, legend, input, textarea, optgroup, button, label,
+select
+{
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+body {
+	font-size: @defaultFontSize;
+	font-family: @defaultFontFamily;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0.5em 0;
+}
+
+h1 {
+	font-size: 24pt;
+}
+
+h2 {
+	font-size: 21pt;
+}
+
+h3 {
+	font-size: 18pt;
+}
+
+h4 {
+	font-size: 16pt;
+}
+
+h5 {
+	font-size: 14pt;
+}
+
+h6 {
+	font-size: 12pt;
+}
+
+pre, code {
+	font-family: @monospaceFontFamily;
+	font-size: @monospaceFontSize;
+}
+
+pre {
+	margin: 1em 2em;
+}
+
+a {
+	color: @linkColor;
+}
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: @visitedLinkColor;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p{
+	margin: 0.5em 0;
+}
+
+.banner {
+	text-align: center;
+	padding-top: 30px;
+	border-bottom: @solidBorder;
+
+	a.title {
+		font-size: 21pt;
+		font-family: Serif;
+	}
+
+	li {
+		display: inline;
+		margin: 0 20px;
+	}
+}
+
+.body {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.post {
+	margin: 20px;
+	.title {
+		font-size: 18pt;
+	}
+
+	.meta div {
+		display: inline;
+		color: @metaColor;
+	}
+
+	.body {
+		margin: 0 30px;
+	}
+
+	h1 {
+		font-size: 21pt;
+	}
+
+	h2 {
+		font-size: 18pt;
+	}
+
+	h3 {
+		font-size: 16pt;
+	}
+
+	h4 {
+		font-size: 14pt;
+	}
+
+	h5 {
+		font-size: 12pt;
+	}
+
+	h6 {
+		font-size: 11pt;
+	}
+}
+
+#comment {
+	padding-left: 20px;
+	padding-right: 20px;
+	h1 {
+		font-size: 16pt;
+	}
+	h2 {
+		font-size: 15pt;
+	}
+	h3 {
+		font-size: 14pt;
+	}
+	h4 {
+		font-size: 13pt;
+	}
+	h5 {
+		font-size: 12pt;
+	}
+	h6 {
+		font-size: 11pt;
+	}
+
+	.meta div {
+		display: inline;
+	}
+}
+
+.footer {
+	padding: 20px;
+	border-top: @solidBorder;
+	text-align: center;
+}

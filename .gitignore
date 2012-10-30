@@ -1,2 +1,3 @@
 node_modules/
+static/css/*.css
 npm-debug.log

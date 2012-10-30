@@ -1,7 +1,7 @@
 
-.PHONY: init clean start
+.PHONY: init clean start make-css
 
-all:
+all: make-css
 
 
 init:
@@ -9,8 +9,12 @@ init:
 	git submodule update
 	npm install
 
+make-css: static/css/style.css
 
-start: init
+static/css/style.css: less/style.less
+	lessc $< > $@
+
+start: init make-css
 	npm start
 
 clean:
