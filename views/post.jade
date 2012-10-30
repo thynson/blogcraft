@@ -9,12 +9,8 @@ block body
         each comment in post.comments
             .comment
                 img.meta.avatar(src='http://www.gravatar.com/avatar/' + comment.emailMD5 + '?s=40')
-                .meta
-                    .label Nickname:
-                    .value= comment.name
-                .meta
-                    .label Date:
-                    .value
+                .meta.name= comment.name
+                .meta.date
                         mixin showDate(comment.createdDate)
                 .content!= comment.body
         .compose
