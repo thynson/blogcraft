@@ -9,7 +9,10 @@ block body
         each comment in post.comments
             .comment
                 img.meta.avatar(src='http://www.gravatar.com/avatar/' + comment.emailMD5 + '?s=40')
-                .meta.name= comment.name
+                - if (comment.website)
+                    a.meta.name(href=comment.website)= comment.name
+                - else
+                    .meta.name= comment.name
                 .meta.date
                         mixin showDate(comment.createdDate)
                 .content!= comment.body
