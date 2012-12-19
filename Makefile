@@ -9,12 +9,8 @@ init:
 	git submodule update
 	npm install
 
-make-css: static/css/style.css
 
-static/css/style.css: less/style.less
-	lessc $< > $@
-
-start: init make-css
+start: init
 	npm start
 
 clean:
