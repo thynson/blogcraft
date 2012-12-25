@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "component/jquery": "*",
+    "btknorr/bootstrap": "*"
+  }
+}
