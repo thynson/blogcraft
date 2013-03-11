@@ -8,13 +8,14 @@ block body
     div#comment
         each comment in post.comments
             .comment
-                img.meta.avatar(src='http://www.gravatar.com/avatar/' + comment.emailMD5 + '?s=40')
-                - if (comment.website)
-                    a.meta.name(href=comment.website)= comment.name
-                - else
-                    .meta.name= comment.name
-                .meta.date
-                        mixin showDate(comment.createdDate)
+                .meta
+                    img.avatar(src='http://www.gravatar.com/avatar/' + comment.emailMD5 + '?s=40')
+                    - if (comment.website)
+                        a.name(href=comment.website)= comment.name
+                    - else
+                        .name= comment.name
+                    .date
+                            mixin showDate(comment.createdDate)
                 .content!= comment.body
         .compose
             mixin markdownEditor("post", '/post/' + post._id + '/comment')
