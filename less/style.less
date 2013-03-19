@@ -123,7 +123,8 @@ p{
 }
 
 .post {
-	margin: 20px;
+	padding: 20px;
+	border-bottom: @solidBorder;
 	.title {
 		font-size: 18pt;
 	}
@@ -201,28 +202,27 @@ p{
 			width: 750px;
 		}
 	}
+}
 
-	.compose {
+.compose {
 
-		border-top: @solidBorder;
-		padding: 5px;
+	padding: 5px;
 
-		div {
-			label {
-				width: 80px;
-				display: inline-block;
-			}
+	div {
+		label {
+			width: 80px;
+			display: inline-block;
 		}
+	}
 
-		input, textarea {
-			border: @solidBorder;
-			margin: 5px;
-		}
+	input, textarea {
+		border: @solidBorder;
+		margin: 5px;
+	}
 
-		textarea {
-			min-height: 300px;
-			min-width: 600px;
-		}
+	textarea {
+		min-height: 300px;
+		min-width: 600px;
 	}
 }
 
