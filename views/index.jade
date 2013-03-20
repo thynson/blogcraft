@@ -5,33 +5,32 @@ block append head
 block body
     each post in posts
         mixin showPost(post, '/post/' + post._id)
-    if meta.page != meta.maxPage
-        div.page-navigate
-            | [#{meta.page}/#{meta.maxPage}]:
+    div.page-navigate
+        | [#{meta.page}/#{meta.maxPage}]:
+        | [
+        a(href='?page=1') &lt;&lt;
+        | ]
+
+        | [
+        - if (meta.page > 1)
+            a(href='?page=' + (meta.page-1)) &lt;
+        - else
+            | &lt;
+        | ]
+
+
+        - for (var i = meta.startPage; i <= meta.endPage; i++)
             | [
-            a(href='?page=1') &lt;&lt;
+            a(href='?page=' + i) #{i}
             | ]
 
-            | [
-            - if (meta.page > 1)
-                a(href='?page=' + (meta.page-1)) &lt;
-            - else
-                | &lt;
-            | ]
-
-
-            - for (var i = meta.startPage; i <= meta.endPage; i++)
-                | [
-                a(href='?page=' + i) #{i}
-                | ]
-
-            | [
-            - if (meta.page < meta.maxPage)
-                a(href='?page=' + (meta.page+1)) &gt;
-            - else
-                | &gt;
-            | ]
-            | [
-            a(href='?page=' + meta.maxPage) &gt;&gt;
-            | ]
+        | [
+        - if (meta.page < meta.maxPage)
+            a(href='?page=' + String(Number(meta.page) + 1)) &gt;
+        - else
+            | &gt;
+        | ]
+        | [
+        a(href='?page=' + meta.maxPage) &gt;&gt;
+        | ]
 
