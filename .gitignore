@@ -2,3 +2,6 @@ node_modules/
 components/
 static/
 npm-debug.log
+# For uploading, should be remove after the coming of gridfs support
+upload/
+tmpupload/
