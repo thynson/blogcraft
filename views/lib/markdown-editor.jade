@@ -10,7 +10,9 @@ mixin markdownEditor(method, target)
         div
             label Website
             input(type='text', name='website')
-        textarea.editor(name='body')
+        div
+            label
+            textarea.editor(name='body')
         input(type='submit', value='Submit')
 
 
