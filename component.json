@@ -1,6 +1,10 @@
 {
+  "name" : "blogcraft",
   "dependencies": {
     "component/jquery": "*",
     "btknorr/bootstrap": "*"
-  }
+  },
+  "script" : [
+    "scripts/index.js"
+  ]
 }
