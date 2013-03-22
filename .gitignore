@@ -5,3 +5,7 @@ npm-debug.log
 # For uploading, should be remove after the coming of gridfs support
 upload/
 tmpupload/
+
+# component build output
+build/
+
