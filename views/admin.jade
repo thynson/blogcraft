@@ -1,16 +1,65 @@
-include lib/mixin.jade
-include lib/markdown-editor.jade
-extends normal-page
-block append head
-    title= 'Blog administration'
-block body
-    div.compose
-        form.markdown-editor(method='POST', action='/post')
-            div
-                label Title
-                input(type='text', name='title')
-            div
-                label Content
-                textarea.editor(name='body')
-            input(type='submit', value='submit')
+!!!
+html
+    head
+        title Blogcraft administration
+        meta(name='viewport', content='width-device-width, initial-scale=1.0')
+        link(type='text/css', rel='stylesheet', href='/static/blogcraft.css')
+        style(type='text/css')
+            body {
+                padding: 50px
+            }
+    body
+        .navbar.navbar-inverse.navbar-fixed-top
+            .navbar-inner
+                .container
+                    button.btn.btn-navbar(type='button',
+                        data-toggle='collapse',
+                        data-target='.nav-collapse')
+                    a.brand(href='#') Blogcraft
+                    .nav-collapse.collapse
+                        ul.nav.nav-list
+                            li.span1
+                                a.active(data-toggle='nav-list',
+                                    href='#compose-blog').
+                                    Compose
+                            li.span1
+                                a(data-toggle='nav-list',
+                                    href='#compose-blog').
+                                    Admin
+
+        .container
+            div.row
+                div.span3
+                    form
+                        fieldset
+                            input(type='file')
+                            button.btn(type='submit') Submit
+                            button.btn(type='reset') Reset
+
+                div.span9
+                    form
+                        fieldset
+                            legend Compose
+                            .control-group
+                                label.control-label Title
+                                .controls
+                                    input(type='text', placehoder='Title').form-horizontal
+                            .control-group
+                                label.control-label Content
+                                .controls
+                                    textarea
+                            div.form-action
+                                button.btn(type='submit') Submit
+                                button.btn(type='reset') Reset
+
+
+
+
+
+        script(type='application/json', src='/static/blogcraft.js')
+        script(type='application/json')
+            require('blogcraft/blogcraft');
+
+
+
 
