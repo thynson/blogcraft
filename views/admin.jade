@@ -8,6 +8,12 @@ html
             body {
                 padding: 50px
             }
+            textarea {
+                width: 100%;
+                min-height: 400px;
+                font-family: monospace;
+
+            }
     body
         .navbar.navbar-inverse.navbar-fixed-top
             .navbar-inner
@@ -28,38 +34,56 @@ html
                                     Admin
 
         .container
-            div.row
-                div.span3
-                    form
-                        fieldset
-                            input(type='file')
-                            button.btn(type='submit') Submit
-                            button.btn(type='reset') Reset
+            .tabbale.tabs-left
+                ul.nav.nav-tabs
+                    li.active
+                        a(href='#home', data-toggle='tab') Home
+                    li
+                        a(href='#compose', data-toggle='tab') Compose
+                    li
+                        a(href='#manage', data-toggle='tab') Manage
 
-                div.span9
-                    form
-                        fieldset
-                            legend Compose
-                            .control-group
-                                label.control-label Title
-                                .controls
-                                    input(type='text', placehoder='Title').form-horizontal
-                            .control-group
-                                label.control-label Content
-                                .controls
-                                    textarea
-                            div.form-action
-                                button.btn(type='submit') Submit
-                                button.btn(type='reset') Reset
+                div.tab-content
+                    div.tab-pane.in.active#home
+                        h3 Welcome to blog administration
+                        div#home-number-composed
+                    div.tab-pane.fade#compose
+                        //
+                            div.span3
+                                form
+                                    fieldset
+                                        legend Upload file
+                                        .control-group
+                                            label.control-label Select file
+                                            .controls
+                                                input(type='file')
+                                        .form-action
+                                            button.btn(type='submit') Submit
+                                            button.btn(type='reset') Reset
+                        div.span9
+                            form
+                                fieldset
+                                    legend Compose
+                                    .control-group
+                                        label.control-label Title
+                                        .controls
+                                            input(type='text')
+                                    .control-group
+                                        label.control-label Custom URL
+                                        .controls
+                                            input(type='text')
+                                    .control-group
+                                        label.control-label Content
+                                        .controls
+                                            textarea.large
+                                    div.form-action.controls
+                                        button.btn(type='submit') Submit
+                                        button.btn(type='reset') Reset
 
+                    div.tab-pane.fade#manage
 
-
-
-
-        script(type='application/json', src='/static/blogcraft.js')
-        script(type='application/json')
-            require('blogcraft/blogcraft');
-
-
+        script(type='application/javascript', src='/static/blogcraft.js')
+        script(type='application/javascript').
+            require('blogcraft/scripts/index');
 
 
