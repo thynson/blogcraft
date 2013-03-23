@@ -1,8 +1,11 @@
 
-.PHONY: init clean start make-css
+.PHONY: init clean start make-css build
 
 all: make-css
 
+
+build:
+	component build -o static -n blogcraft
 
 init:
 	git submodule init
