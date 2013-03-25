@@ -1,7 +1,7 @@
 
-.PHONY: init clean start make-css build
+.PHONY: init clean start build
 
-all: make-css
+all: build
 
 
 build:
