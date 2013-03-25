@@ -39,15 +39,15 @@ html
                     li.active
                         a(href='#home', data-toggle='tab') Home
                     li
-                        a(href='#compose', data-toggle='tab') Compose
+                        a(href='#edit', data-toggle='tab') Edit
                     li
                         a(href='#manage', data-toggle='tab') Manage
 
                 div.tab-content
-                    div.tab-pane.in.active#home
+                    div.tab-pane.fade.in.active#home
                         h3 Welcome to blog administration
                         div#home-number-composed
-                    div.tab-pane.fade#compose
+                    div.tab-pane.fade#edit
                         //
                             div.span3
                                 form
@@ -81,6 +81,17 @@ html
                                         button.btn(type='reset') Reset
 
                     div.tab-pane.fade#manage
+                        div
+                            table.table.table-stripped.table-hover.table-bordered#post-list
+                                thead
+                                    td(style='width:60%') Title
+                                    td(style='width:20%') LastModified
+                                    td(style='width:20%') Operation
+                                tbody
+                                tfoot
+
+
+
 
         script(type='application/javascript', src='/static/blogcraft.js')
         script(type='application/javascript').
