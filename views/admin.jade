@@ -60,22 +60,21 @@ html
                                         .form-action
                                             button.btn(type='submit') Submit
                                             button.btn(type='reset') Reset
-                        div.span9
-                            form
+                        button.btn.btn-primary.pull-right#btn-new-post New post
+                        div
+                            form#form-new-post
                                 fieldset
+                                    input(type='text', name='id',
+                                    style='display:none')
                                     legend Compose
                                     .control-group
                                         label.control-label Title
                                         .controls
-                                            input(type='text')
-                                    .control-group
-                                        label.control-label Custom URL
-                                        .controls
-                                            input(type='text')
+                                            input(type='text', name='title')
                                     .control-group
                                         label.control-label Content
                                         .controls
-                                            textarea.large
+                                            textarea.large(name='body')
                                     div.form-action.controls
                                         button.btn(type='submit') Submit
                                         button.btn(type='reset') Reset
