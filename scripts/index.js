@@ -15,7 +15,7 @@ $('#form-new-post').submit(function(e) {
 
 	//TODO: Veryfy data
 
-	if (!isModify) {
+	if (isModify) {
 		postdata.id = $('#form-new-post input[name="id"]').val();
 	}
 
