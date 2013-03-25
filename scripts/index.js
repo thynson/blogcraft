@@ -59,7 +59,7 @@ $('a[data-toggle="tab"]').on('shown', function(e) {
 						.addClass('btn')
 						.text('Remove')
 						.click(function(e) {
-							$.post('/ajax/post/delete'
+							$.post('/post/delete'
 							, { id : value._id}
 							, function(){
 								tr.remove();
