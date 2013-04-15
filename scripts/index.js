@@ -5,7 +5,7 @@ var isModify = false;
 
 $('#btn-new-post').click(function(e) {
 	isModify = false;
-	$('#form-new-post').reset();
+	$('#form-new-post input, textarea').val('');
 });
 
 $('#form-new-post').submit(function(e) {
@@ -37,8 +37,11 @@ $('a[data-toggle="tab"]').on('shown', function(e) {
 	switch(currentTabId) {
 
 	case '#edit':
-		(function() {
-		});
+		if (!isModify) {
+			// FIXME:
+			$('#form-new-post input').val();
+			$('#form-new-post textarea').val();
+		}
 
 	case '#manage':
 		(function(){
@@ -92,7 +95,11 @@ $('a[data-toggle="tab"]').on('shown', function(e) {
 	switch(relatedTabId) {
 	case '#manage':
 		postListTable.empty();
+		break;
 
+	case '#edit':
+		isModify = false;
+		break;
 	};
 
 });
