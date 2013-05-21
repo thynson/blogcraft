@@ -5,6 +5,7 @@
     "btknorr/bootstrap": "*"
   },
   "scripts" : [
-    "scripts/index.js"
+    "scripts/index.js",
+    "scripts/client.js"
   ]
 }

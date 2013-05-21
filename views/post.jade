@@ -18,7 +18,20 @@ block body
                             mixin showDate(comment.createdDate)
                 .content!= comment.body
         .compose
-            mixin markdownEditor("post", '/post/' + post._id + '/comment')
+            form.markdown-editor#compose-comment(method=method, action=target)
+                div
+                    label Name
+                    input(type='text', name='name')
+                div
+                    label Email
+                    input(type='text', name='email')
+                div
+                    label Website
+                    input(type='text', name='website')
+                div
+                    label
+                    textarea.editor(name='body')
+                input(type='submit', value='Submit')
 
 
 
